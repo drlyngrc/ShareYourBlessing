@@ -28,3 +28,6 @@ To run this project locally:
 2. Open index.html in your browser. 
 
 3. And, that's it.
+
+## Developer
+- [Lalongisip, Darlyne Grace M.](https://github.com/drlyngrc)  
