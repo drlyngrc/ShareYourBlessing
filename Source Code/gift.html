@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/home.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Send Gift</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <button onclick="history.back()" class="back_button">
+                    <i class="ri-arrow-left-line"></i> <strong>Send Gift
+                </button>   
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== GIFTS ==========-->
+            <section class="gifts section bd-container" id="gifts">
+                <div class="search-container">
+                    <i class="ri-search-line search-icon"></i>
+                    <input type="text" id="search-gift" class="search-input" placeholder="Search gift...">
+                </div>
+
+                <h2 class="section-title">Clothes</h2>
+                <div class="gifts__container bd-grid">
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes1.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Christmas Terno</h3>
+                        <h4 class="gifts_price">Php 189.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes2.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Jumper for Girls</h3>
+                        <h4 class="gifts_price">Php 159.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes5.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Pants</h3>
+                        <h4 class="gifts_price">Php 199.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes3.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Jumper for Baby</h3>
+                        <h4 class="gifts_price">Php 139.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes6.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Sweater</h3>
+                        <h4 class="gifts_price">Php 259.00</h4>
+                    </div>
+                    
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/clothes4.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Dress</h3>
+                        <h4 class="gifts_price">Php 249.00</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gifts section bd-container" id="gifts">
+                <h2 class="section-title">Toys</h2>
+                <div class="gifts__container bd-grid">
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys1.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Toy Cars</h3>
+                        <h4 class="gifts_price">Php 249.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys2.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Blocks</h3>
+                        <h4 class="gifts_price">Php 149.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys5.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Robots</h3>
+                        <h4 class="gifts_price">Php 299.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys3.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Instruments</h3>
+                        <h4 class="gifts_price">Php 229.00</h4>
+                    </div>
+
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys6.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Stuffed Animal</h3>
+                        <h4 class="gifts_price">Php 209.00</h4>
+                    </div>
+                    
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/toys4.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Dolls</h3>
+                        <h4 class="gifts_price">Php 229.00</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gifts section bd-container" id="gifts">
+                <h2 class="section-title"></h2>
+                <div class="gifts__container bd-grid">
+                    <div class="gifts__data gift__data">
+                        <img src="assets/img/special.png" alt="" class="gift__img">
+                        <h3 class="gifts__title">Special Gift For Children</h3>
+                        <h4 class="gifts_price">Php 499.00</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== SEND GIFT ==========-->
+            <section class="send section">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Send Gift Now</h2>
+                        <p class="send__description">Start giving away before the holidays are over. Write the address of the orphanage who will receive the gift.</p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="Address" class="send__input" id="addressInput">
+                                <a href="payment.html" class="button" id="sendButton" style="background-color: gray; pointer-events: none;">Send</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="assets/img/send.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Share Your Blessings</a>
+                    </h3>
+                    <p class="footer__description">Send a gift and <br> it will give happiness</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                        <li><a href="#" class="footer__link">Shipping mode</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 drlyngrc. All right reserved</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://app.embed.im/snow.js" defer></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const giftItems = document.querySelectorAll('.gift__data'); 
+                giftItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        this.classList.toggle('clicked');
+                    });
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const addressInput = document.getElementById('addressInput');
+                const sendButton = document.getElementById('sendButton');
+        
+                // Function to check if the input is empty
+                function checkInput() {
+                    if (addressInput.value.trim() === "") {
+                        sendButton.style.backgroundColor = 'gray';  
+                        sendButton.style.pointerEvents = 'none';  // Disable click
+                    } else {
+                        sendButton.style.backgroundColor = '';
+                        sendButton.style.pointerEvents = 'auto';  // Enable click
+                    }
+                }
+                addressInput.addEventListener('input', checkInput);
+                checkInput();
+            });
+
+        </script>
+    </body>
+</html>

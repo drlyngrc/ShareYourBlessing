@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/home.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Payment Processing - Share Your Blessing</title>
+</head>
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <button onclick="history.back()" class="back_button">
+                <i class="ri-arrow-left-line"></i> <strong>Payment
+            </button>   
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== PAYMENT ==========-->
+        <section class="payment section bd-container" id="payment">
+            <h2 class="section-title-pay-center">Payment Processing</h2>
+            <p class="payment__description">Please enter your payment details to complete the gift transaction.</p>
+
+            <div class="payment__container bd-grid">
+                <div class="payment__form">
+                    <form action="#" method="POST">
+                        <!-- Card Details Section -->
+                        <div class="payment__input-group">
+                            <label for="card-number" class="payment__label">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" class="payment__input" placeholder="Enter card number" required>
+                        </div>
+
+                        <div class="payment__input-group">
+                            <label for="card-holder" class="payment__label">Cardholder's Name</label>
+                            <input type="text" id="card-holder" name="card-holder" class="payment__input" placeholder="Enter cardholder's name" required>
+                        </div>
+
+                        <div class="payment__input-group">
+                            <label for="expiry-date" class="payment__label">Expiration Date</label>
+                            <input type="month" id="expiry-date" name="expiry-date" class="payment__input" required>
+                        </div>
+
+                        <div class="payment__input-group">
+                            <label for="cvv" class="payment__label">CVV</label>
+                            <input type="text" id="cvv" name="cvv" class="payment__input" placeholder="Enter CVV" required>
+                        </div>
+
+                        <!-- Billing Address Section -->
+                        <h3 class="payment__subsection-title">Billing Address</h3>
+                        <div class="payment__input-group">
+                            <label for="address" class="payment__label">Address</label>
+                            <input type="text" id="address" name="address" class="payment__input" placeholder="Enter address" required>
+                        </div>
+
+                        <div class="payment__input-group">
+                            <label for="city" class="payment__label">City</label>
+                            <input type="text" id="city" name="city" class="payment__input" placeholder="Enter city" required>
+                        </div>
+
+                        <div class="payment__input-group">
+                            <label for="zip" class="payment__label">ZIP Code</label>
+                            <input type="text" id="zip" name="zip" class="payment__input" placeholder="Enter ZIP code" required>
+                        </div>
+
+                        <!-- Payment Button -->
+                        <div class="payment__button-container">
+                            <button type="submit" class="button">Complete Payment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">Share Your Blessing</a>
+                </h3>
+                <p class="footer__description">Send a gift and <br> it will give happiness</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Pricing </a></li>
+                    <li><a href="#" class="footer__link">Discounts</a></li>
+                    <li><a href="#" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">About us</a></li>
+                    <li><a href="#" class="footer__link">Our mission</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2024 drlyngrc. All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://app.embed.im/snow.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const paymentForm = document.querySelector('form');
+        
+            paymentForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+        
+                Swal.fire({
+                    title: 'Confirm Payment',
+                    text: "Are you sure you want to proceed with the payment?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: '<span style="color: white;">Proceed</span>',
+                    confirmButtonColor: '#008000', 
+                    cancelButtonText: 'Cancel',
+                    cancelButtonColor: '#d33'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            'Payment Successful!',
+                            'Your payment has been processed.',
+                            'success'
+                        ).then(() => {
+                            window.location.href = "main.html"; 
+                        });
+                    }
+                }); 
+            });
+        });
+    </script>    
+    
+</body>
+</html>

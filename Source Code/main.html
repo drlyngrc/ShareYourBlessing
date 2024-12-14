@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/home.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Share Your Blessing</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Share Your Blessing</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item user" id="user-item"><i class="bx bx-user" id="user-icon"></i> </li>
+                    </ul>
+
+                    <!-- User options dropdown (hidden by default) -->
+                    <div id="user-dropdown" class="user-dropdown">
+                        <ul>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                        <p class="share__description">Sharing these holidays is the best gift you can give, give a present or share your love and celebrate with great happiness.</p>
+                        <a href="gift.html" class="button">Send a Gift</a>
+                    </div>
+
+                    <div class="share__img">
+                        <img src="assets/img/shared.png" alt="">
+                    </div>
+                </div>
+                <div class="home_blob"></div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Share Your Blessing</a>
+                    </h3>
+                    <p class="footer__description">Send a gift and <br> it will give happiness</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing </a></li>
+                        <li><a href="#" class="footer__link">Discounts</a></li>
+                        <li><a href="#" class="footer__link">Shipping mode</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 drlyngrc. All right reserved</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://app.embed.im/snow.js" defer></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const userItem = document.getElementById('user-item');
+                const userDropdown = document.getElementById('user-dropdown');
+            
+                // Toggle the user dropdown when the user icon is clicked
+                userItem.addEventListener('click', function() {
+                    // Toggle visibility of the dropdown
+                    userDropdown.style.display = (userDropdown.style.display === 'block') ? 'none' : 'block';
+                });
+            
+                // Optional: Close the dropdown if clicking outside of it
+                document.addEventListener('click', function(e) {
+                    if (!userItem.contains(e.target) && !userDropdown.contains(e.target)) {
+                        userDropdown.style.display = 'none';
+                    }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const historyLink = document.querySelector('a[href="#history"]');
+        
+                historyLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+        
+                    Swal.fire({
+                        title: 'History Section',
+                        text: "The History section is not working yet. Stay tuned!",
+                        icon: 'info',
+                        confirmButtonText: '<span style="color: white;">Okay</span>',
+                        confirmButtonColor: '#008000'
+                    });
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const logoutLink = document.querySelector('a[href="index.html"]');
+        
+                logoutLink.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent the default link behavior
+        
+                    Swal.fire({
+                        title: 'Confirm Logout',
+                        text: "Are you sure you want to log out?",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonText: '<span style="color: white;">Logout</span>',
+                        confirmButtonColor: '#008000',
+                        cancelButtonText: 'Cancel',
+                        cancelButtonColor: '#d33'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Redirect to the logout URL (index.html) if confirmed
+                            window.location.href = "index.html"; 
+                        }
+                    });
+                });
+            });
+            
+        </script>
+    </body>
+</html>
