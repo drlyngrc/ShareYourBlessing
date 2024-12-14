@@ -1,7 +1,7 @@
 # Share Your Blessing
 "Share Your Blessing" is a web platform designed to allow users to send thoughtful gifts to children in orphanages during the Christmas season. The platform enables users to select from a variety of gifts, including clothes, toys, and other essentials, helping to spread joy and love to children in need.
 
-![Screenshot of Share Your Blessing Web](Source-Code/assets/img/sample.png)
+<div align="center"><img src="Source Code/assets/img/sample.png" alt="PINDOT main" width="680" height="400">  </div>
 
 ## Features
 
