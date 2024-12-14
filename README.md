@@ -17,6 +17,12 @@
 2. **Send a Gift:** Log in and select the gift you'd like to send.
 3. **Share Joy:** Your gift helps bring happiness to children in orphanages during the holiday season.
 
+## Technologies Used
+
+- **HTML**: Web pages structure.
+- **CSS**: Web pages styles.
+- **JavaScript**: Interactivity and functionality.
+
 ## Installation
 
 To run this project locally:
@@ -28,6 +34,11 @@ To run this project locally:
 2. Open index.html in your browser. 
 
 3. And, that's it.
+
+## School Requirement
+
+- Final Project for the course CS 321 | Human-Computer Interaction 
+- Course Facilitator: **Mrs. Lanie Palad**
 
 ## Developer
 - [Lalongisip, Darlyne Grace M.](https://github.com/drlyngrc)  
